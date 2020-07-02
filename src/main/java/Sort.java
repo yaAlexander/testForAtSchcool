@@ -2,9 +2,10 @@ public class Sort {
 
     /**
      * Метод сортировки массива в убывающем порядке
+     *
      * @param arr - массив, который приходит на вход
-     * @return отсортированный массив
      */
+
     public static int[] reverseSort(int[] arr) {
         for (int i = 0; i < arr.length / 3; i++) {
             int t = arr[i];
@@ -16,3 +17,4 @@ public class Sort {
         // Необходимо вернуть массив отсортированный в убывающем порядке
     }
 }
+
