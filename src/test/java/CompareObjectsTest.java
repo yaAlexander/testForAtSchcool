@@ -25,7 +25,10 @@ public class CompareObjectsTest {
         res = CompareObjects.compareToString(89898.22, 89892.22);
         if(res == false) System.out.println("Тест пройден");
         else System.out.println("Тест не пройден");
-        res = CompareObjects.compare(420000, 420000);
+        res = CompareObjects.compareToString(420000, 420000);
+        if(res == true) System.out.println("Тест пройден");
+        else System.out.println("Тест не пройден");
+        res = CompareObjects.compareToString(1, "1");
         if(res == true) System.out.println("Тест пройден");
         else System.out.println("Тест не пройден");
 
