@@ -1,5 +1,23 @@
 //------------------CompareObjects------------------//
 1. В классе CompareObjects багов не обнаружено
 
+//------------------Map------------------//
+1. В классе Map производится неправильный подсчет количества одинаковых элементов
+2. В классе Map метод удаления определенного элемента из HashMap не срабатывает
+пр. (Exception in thread "main" java.util.ConcurrentModificationException)
+при попытке удалить "Владимир"
 //------------------Sort------------------//
 1. В классе Sort происходит неправильная сортировака
+2.Возможный правильный вариант сортировки по убыванию
+/*private static int[] reverseSort(int[] array) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = arr.length - 1; j > i; j--) {
+                if (arr[i] < arr[j]) {
+                    int t = array[i];
+                    arr[i] = arr[j];
+                    arr[j] = t;
+                }
+            }
+        }
+        return arr;
+    }*/
